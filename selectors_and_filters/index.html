@@ -1,43 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<main class="container">
+
   <body>
     <h1>Selectors en Filters</h1>
 
-    <!-- Maak een ul met 5 li -->
-    <ol class="a">
-      <li id="eerste" class="amazing">Dit is de eerste regel tekst</li>
-      <li>Dit is de eerste regel tekst</li>
-      <li class="alert">Dit is de eerste regel tekst</li>
-      <li>Dit is de eerste regel tekst</li>
-      <li class="alert">Dit is de eerste regel tekst</li>
-    </ol>
+    <div class="row">
+      <div class="col-6">
+        <!-- Maak een ul met 5 li -->
+        <ol class="a">
+          <li id="eerste" class="amazing">Dit is de eerste regel tekst</li>
+          <li>Dit is de eerste regel tekst</li>
+          <li class="alert">Dit is de eerste regel tekst</li>
+          <li>Dit is de eerste regel tekst</li>
+          <li class="alert">Dit is de eerste regel tekst</li>
+        </ol>
+      </div>
+      <div class="col-6">
+        <ol class="b">
+          <li id="eerste" class="amazing">Dit is de eerste regel tekst</li>
+          <li>Dit is de eerste regel tekst</li>
+          <li class="alert">Dit is de eerste regel tekst</li>
+          <li id="tweede">Dit is de eerste regel tekst</li>
+          <li class="alert">Dit is de eerste regel tekst</li>
+          <li peppieenkokkie="leuk">Dit is de eerste regel tekst</li>
+        </ol>
+      </div>
+    </div>
 
-    <hr>
+    <div class="row">
+      <div class="col-6">
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="first">Verander css eerste li</button>
+          <button type="button" class="btn btn-success btn-lg btn-block" id="last">Verander css laatste li</button>
+          <button type="button" class="btn btn-secondary btn-lg btn-block" id="odd">Verander css oneven li</button>
+          <button type="button" class="btn btn-danger btn-lg btn-block" id="even">Verander css even li</button>
+          <button type="button" class="btn btn-warning btn-lg btn-block" id="gt">Verander css groter dan 3de li</button>
+          <button type="button" class="btn btn-info btn-lg btn-block" id="lt">Verander css kleiner dan 4de li</button>
+          <button type="button" class="btn btn-dark btn-lg btn-block" id="eq">Verander css gelijk aan 2de li</button>
+          
 
-    <ol class="b">
-      <li id="eerste" class="amazing">Dit is de eerste regel tekst</li>
-      <li>Dit is de eerste regel tekst</li>
-      <li class="alert">Dit is de eerste regel tekst</li>
-      <li>Dit is de eerste regel tekst</li>
-      <li class="alert">Dit is de eerste regel tekst</li>
-    </ol>
+      </div>
+      <div class="col-6">
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="attr">Verander css li's met een class attribuut </button>        
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="id">Verander css li's met een id attribuut </button>        
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="id-eerste">Verander css li's met een id="eerste" </button>        
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="peppie">Verander css li's peppieenkokkie attribuut </button>        
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="twee-attr">Verander css li's met attribuut id en class</button>        
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="gedeelte-attr">Verander css li's met class="*maz*"</button>        
+      </div>
+    </div>
+</main>
 
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+<script src="./js/jquery.js"></script>
+</body>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./js/jquery.js"></script>
-  </body>
 </html>
