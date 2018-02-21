@@ -1,6 +1,6 @@
 // Hier wordt gekeken of de index.html pagina helemaal(behalve de plaatjes) geladen is.
 $(document).ready(function() {
-
+    
   // Hier komt alle javascript en jquery code voor je webapp...
   // alert("Hallo JQuery wereld!")
   // We maken nu een javascript object
