@@ -1,0 +1,22 @@
+#eerste {
+  width: 100%;
+  height: 250px;
+  background-color: yellowgreen;
+}
+
+#tweede {
+  width: 100%;
+  height: 250px;
+  background-color: orange;
+}
+
+#derde {
+  width: 100%;
+  height: 250px;
+  background-color:palevioletred;
+}
+
+.row {
+  margin-bottom: 2em;
+}
+

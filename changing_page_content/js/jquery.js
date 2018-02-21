@@ -32,14 +32,23 @@ $(document).ready(function() {
     $(this).off("mouseleave ");
   })
 
-  $("#content4").on("click", function() {
+  $("#after").on("click", function() {
     var nieuwItem = $("<li>Dit is een nieuw listitem</li>");
     nieuwItem.css({"background-color" : "yellow", "border-radius" : "5px"});
     $("ol.a li:eq(2)").after(nieuwItem);
   })
 
-  
+  // Zet hier code die voor het 5de li een nieuw li zet.
+  $("#before").on("click", function () {
+    var newText = $("<li>Dit li wordt voor het vijfde li gezet</li>");
+    newText.css({"background-color" : "orange", "font-weight" : "bold"});
+    $("ol.a li:eq(4)").before(newText);
+  });
 
+  $("#verplaats").on("click",  function () {
+    var vierde = $("ol.a li:eq(4)");
+    $("ol.a li:eq(0)").before(vierde);
+  });
   
 });
 
