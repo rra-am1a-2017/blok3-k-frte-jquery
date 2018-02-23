@@ -13,6 +13,12 @@ $(document).ready(function() {
   $("#rmClass").on("click", function () {
     $("#tweede").removeClass("roundCorners");
   });
+
+  $("#addCorners").on("click", function () {
+    $("#tweede").addClass("roundCorners");
+  });
+
+  // toggleClass
 });
 
 
