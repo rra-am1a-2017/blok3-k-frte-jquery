@@ -40,3 +40,12 @@
   font-weight: bold;
 }
 
+h4 {
+  color : rgb(167, 167, 167);
+}
+
+.toggleExample {
+  font-size : 2em;
+  color : white;
+}
+
