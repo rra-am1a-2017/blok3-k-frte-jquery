@@ -6,7 +6,6 @@ $(document).ready(function () {
 
     // We gaan asynchroon data ophalen van een php pagina
     $.post("http://localhost/2017-2018/blok3/k-frte-am1a/ajax_carousel/data.php",
-            { "fotos" : "dieren" },
             function(data) {
               $("#response").val(data);
             },
