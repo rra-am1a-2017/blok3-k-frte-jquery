@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 
 
-  getPictures("groenten");
+  //getPictures("groenten");
 
   $("#selectPics").on("change", function () {
     //alert("Er is iets veranderd in de select");
