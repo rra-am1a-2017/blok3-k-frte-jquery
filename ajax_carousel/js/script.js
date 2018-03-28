@@ -3,6 +3,7 @@ $(document).ready(function () {
   // Roep hier een functie aan met daarin een ajax call naar een pagina loadSelect.php
 
   loadSelect();
+  getPictures("fruit");
 
   function loadSelect() {
      // We gaan asynchroon data ophalen van een php pagina
